@@ -2,7 +2,7 @@
     "$schema": "https://getcomposer.org/schema.json",
     "name": "arthurydalgo/laravext-react-starter-kit",
     "type": "project",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "homepage": "https://github.com/arthurydalgo/laravext-react-starter-kit",
     "description": "The skeleton application for Laravel framework with Laravext.",
     "keywords": [
