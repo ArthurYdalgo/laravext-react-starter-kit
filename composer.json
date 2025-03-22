@@ -1,11 +1,19 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/react-starter-kit",
+    "name": "arthurydalgo/laravext-react-starter-kit",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "homepage": "https://github.com/arthurydalgo/laravext-react-starter-kit",
+    "description": "The skeleton application for Laravel framework with Laravext.",
     "keywords": [
         "laravel",
         "framework"
+    ],
+    "authors": [
+        {
+            "name": "Arthur Ydalgo",
+            "email": "arthur.ydalgo.dev@gmail.com",
+            "role": "Developer"
+        }
     ],
     "license": "MIT",
     "require": {
