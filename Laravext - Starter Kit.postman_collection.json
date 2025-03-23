@@ -22,7 +22,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Arthur\",\n    \"email\": \"arthur3@email.com\",\n    \"password\": \"safe_password\",\n    \"password_confirmation\": \"safe_password\"\n}",
+							"raw": "{\n    \"name\": \"Arthur\",\n    \"email\": \"arthur@email.com\",\n    \"password\": \"safe_password\",\n    \"password_confirmation\": \"safe_password\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -55,7 +55,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"email\": \"test@example.com\",\n    \"password\": \"password\"\n}",
+							"raw": "{\n    \"email\": \"arthur@email.com\",\n    \"password\": \"password\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -63,13 +63,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{app-url}}/api/auth/login",
+							"raw": "{{app-url}}/api/login",
 							"host": [
 								"{{app-url}}"
 							],
 							"path": [
 								"api",
-								"auth",
 								"login"
 							]
 						}
@@ -299,6 +298,24 @@
 								"api",
 								"settings",
 								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Current User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{app-url}}/api/user",
+							"host": [
+								"{{app-url}}"
+							],
+							"path": [
+								"api",
+								"user"
 							]
 						}
 					},
