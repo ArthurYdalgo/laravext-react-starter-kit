@@ -10,8 +10,11 @@ export const useForm = (initialValues: { [key: string]: any }) => {
     const [processing, setProcessing] = useState(false);
     const [recentlySuccessful, setRecentlySuccessful] = useState(false);
     const [formErrors, setFormErrors] = useState<FormErrors>({});
+    const [isDirty, setIsDirty] = useState(false);
 
     const setData = (data: string|Object, value:any|Object = null) => {
+        setIsDirty(true);
+
         if(typeof data === 'object'){
             setFormData(data);
         }else{
@@ -35,6 +38,7 @@ export const useForm = (initialValues: { [key: string]: any }) => {
         if(field){
             setFormData({...formData, [field]: formInitialValues[field]});
         }else{
+            setIsDirty(false);
             setFormData(formInitialValues);
         }
     }
@@ -49,6 +53,8 @@ export const useForm = (initialValues: { [key: string]: any }) => {
         setProcessing,
         recentlySuccessful,
         setRecentlySuccessful,
+        isDirty,
+        setIsDirty,
         reset,
     }
 }
