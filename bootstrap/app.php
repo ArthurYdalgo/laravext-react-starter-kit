@@ -21,7 +21,10 @@ return Application::configure(basePath: dirname(__DIR__))
             AddLinkHeadersForPreloadedAssets::class,
         ]);
 
-        $middleware->statefulApi();
+        $middleware->api(append: [
+            EncryptCookies::class,
+            StartSession::class,
+        ]);
 
         /**
          * By default, CSRF is enabled for api routes. Uncomment the following
