@@ -22,11 +22,6 @@ return Application::configure(basePath: dirname(__DIR__))
         ]);
 
         $middleware->statefulApi();
-        
-        $middleware->api(append: [
-            EncryptCookies::class,
-            StartSession::class,
-        ]);
 
         /**
          * By default, CSRF is enabled for api routes. Uncomment the following
@@ -34,9 +29,9 @@ return Application::configure(basePath: dirname(__DIR__))
          * 
          * @source https://laravel.com/docs/13.x/csrf#csrf-excluding-uris
          */ 
-        // $middleware->validateCsrfTokens(except: [
-        //     'api/*'
-        // ]);
+        $middleware->validateCsrfTokens(except: [
+            'api/*'
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
