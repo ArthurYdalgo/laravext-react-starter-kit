@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "23d88ca221e0cbc3de15843aa409d951",
+    "content-hash": "38bd3f07fa30a9a44ce5e6b246e42884",
     "packages": [
         {
             "name": "arthurydalgo/laravext",
-            "version": "1.1.1",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ArthurYdalgo/laravext-packagist.git",
-                "reference": "b8d121be9359de871a1864772906ce97c4ab2ad4"
+                "reference": "b6c0b6fd34c374c2e62b9cd99043edd28d55b736"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ArthurYdalgo/laravext-packagist/zipball/b8d121be9359de871a1864772906ce97c4ab2ad4",
-                "reference": "b8d121be9359de871a1864772906ce97c4ab2ad4",
+                "url": "https://api.github.com/repos/ArthurYdalgo/laravext-packagist/zipball/b6c0b6fd34c374c2e62b9cd99043edd28d55b736",
+                "reference": "b6c0b6fd34c374c2e62b9cd99043edd28d55b736",
                 "shasum": ""
             },
             "require": {
@@ -65,9 +65,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ArthurYdalgo/laravext-packagist/issues",
-                "source": "https://github.com/ArthurYdalgo/laravext-packagist/tree/1.1.1"
+                "source": "https://github.com/ArthurYdalgo/laravext-packagist/tree/v1.2.1"
             },
-            "time": "2026-05-20T11:09:04+00:00"
+            "time": "2026-07-02T15:43:20+00:00"
         },
         {
             "name": "brick/math",
