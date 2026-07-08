@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
     createLaravextApp({
         nexusResolver: (name: string) => resolveComponent(`./nexus/${name}`, import.meta.glob('./nexus/**/*')),
 
+        defaultRedirectToUrlIntended: false,
+
         progress: {
             color: '#4B5563',
         },
