@@ -4,6 +4,13 @@ import { serve } from '@laravext/react/server';
 import { resolveComponent } from '@laravext/react/tools';
 import { route } from '../../vendor/tightenco/ziggy/src/js';
 
+// 1. Redefine the global navigator to be writable before the SSR server starts
+Object.defineProperty(global, 'navigator', {
+    value: global.navigator,
+    writable: true,
+    configurable: true
+});
+
 serve(({ window, cookies }: { window: any; cookies: any }) => {
     return createLaravextSsrApp({
         // This is optional, the default is renderToString from 'react-dom/server', but you can use renderToStaticMarkup if you want
