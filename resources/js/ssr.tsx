@@ -4,7 +4,7 @@ import { serve } from '@laravext/react/server';
 import { resolveComponent } from '@laravext/react/tools';
 import { route } from '../../vendor/tightenco/ziggy/src/js';
 
-// 1. Redefine the global navigator to be writable before the SSR server starts
+// Redefine the global navigator to be writable before the SSR server starts to make it writable.
 Object.defineProperty(global, 'navigator', {
     value: global.navigator,
     writable: true,
